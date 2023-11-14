@@ -9,29 +9,40 @@
 
 body{
     height: 100vh;
+    background: #202020;
 }
 
 nav.menu-lateral{
-    width: 300px;
+    width: 80px;
     height: 100%;
     background-color: #202020;
     padding: 40px 0 40px 1%;
+    box-shadow: 3px 0 0 rgb(9, 216, 227);
+    position: fixed;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    transition: .4s;
 }
 
-.btn-expandir{
-    width: 100%;
-    padding-left: 10px;
-}
-
-.btn-expandir > i{
-    color: #fff;
-    font-size: 24px;
-    cursor: pointer;
+nav.menu-lateral:hover{
+    width: 300px;
 }
 
 ul{
     height: 100%;
     list-style-type: none;
+}
+
+ul li.item-menu{
+    transition: .2s;
+}
+
+ul li.ativo{
+    background: rgb(9, 216, 227);
+}
+ul li.item-menu:hover{
+    background: rgb(9, 216, 227);
 }
 
 ul li.item-menu a{
@@ -50,4 +61,12 @@ ul li.item-menu a .txt-link{
 
 ul li.item-menu a .icon > i{
     font-size: 30px;
+}
+
+#conteudo-dash{
+    height: 0;
+}
+
+#conteudo-config{
+    height: 0;
 }
